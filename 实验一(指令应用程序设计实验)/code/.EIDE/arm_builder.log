@@ -1,3 +1,6 @@
 [2020-04-24 15:43:50]	Link failed !
    在 ARM_Builder_V6.Program.Main(String[] args)
 
+[2020-04-30 16:37:40]	Compilation failed at : "c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\实验\课程实验\实验一(指令应用程序设计实验)\code\src\18221197.c", Exit Code: 3
+   在 ARM_Builder_V6.Program.Main(String[] args)
+

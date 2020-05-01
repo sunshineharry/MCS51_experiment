@@ -1,5 +1,5 @@
 {
-    "name": "code",
+    "name": "code_2",
     "type": "C51",
     "mode": "Release",
     "toolchain": "Keil_C51",
@@ -12,8 +12,7 @@
                     "name": "default",
                     "incList": [
                         ".\\dependence",
-                        ".\\src",
-                        ".\\dependence\\build-in\\toolchain"
+                        ".\\src"
                     ],
                     "libList": [],
                     "sourceDirList": [],
@@ -51,7 +50,7 @@
     "excludeList": [],
     "outDir": ".\\out",
     "uploadConfig": {
-        "bin": ".\\out\\Keil_C51\\code.hex",
+        "bin": ".\\out\\Keil_C51\\code_2.hex",
         "eepromImgPath": "null",
         "options": "./.EIDE/stc.flash.json"
     }

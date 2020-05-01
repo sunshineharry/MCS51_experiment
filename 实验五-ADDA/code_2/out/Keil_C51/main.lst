@@ -1,0 +1,57 @@
+C51 COMPILER V9.52.0.0   MAIN                                                              05/01/2020 16:46:10 PAGE 1   
+
+
+C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\out\Keil_C51\main.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§Æ
+                    -Ú\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\src\main.c PRINT(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ
+                    -§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\out\Keil_C51\main.lst) OMF2 TABS(2) OPTIMIZE(8,SPEED) SMALL ROM(SMALL) INC
+                    -DIR(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\dependence;
+                    -c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\src;c:\Users\Ha
+                    -rry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\dependence\build-in\toolch
+                    -ain) DEFINE(__UVISION_VERSION) OBJECT(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊ
+                    -µÑé\ÊµÑéÎå-ADDA\code_2\out\Keil_C51\main.o)
+
+line level    source
+
+   1          #include "8051.h"
+   2          #include "DAC0832_func.h"
+   3          
+   4          
+   5          void delay1ms(void)   //Îó²î 0us
+   6          {
+   7   1          unsigned char a,b;
+   8   1          for(b=142;b>0;b--)
+   9   1              for(a=2;a>0;a--);
+  10   1      }
+  11          
+  12          
+  13          void main()
+  14          {
+  15   1          uchar volte = 0x00;
+  16   1          while (1)
+  17   1          {
+  18   2              DAC0832 = volte;
+  19   2              volte++;
+  20   2              delay1ms();
+  21   2          }
+  22   1          
+  23   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     21    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
