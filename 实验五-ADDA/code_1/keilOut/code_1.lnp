@@ -1,0 +1,4 @@
+".\keilOut\main.obj" 
+TO ".\keilOut\code_1" 
+
+PRINT(".\Listings\code_1.map")
