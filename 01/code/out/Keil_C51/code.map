@@ -1,0 +1,180 @@
+LX51 LINKER/LOCATER V4.66.1.0                                                           05/07/2020  22:27:24  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
+C:\PROGRAM FILES\KEIL\C51\BIN\LX51.EXE C:\USERS\HARRY\DESKTOP\实验\实验一：指令应用程序设计实验\CODE\OUT\KEIL_C51\182211
+>> 97.O TO C:\USERS\HARRY\DESKTOP\实验\实验一：指令应用程序设计实验\CODE\OUT\KEIL_C51\CODE PRINT (c:\Users\Harry\Desktop
+>> \实验\实验一：指令应用程序设计实验\code\out\Keil_C51\code.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  C:\USERS\HARRY\DESKTOP\实验\实验一：指令应用程序设计实验\CODE\OUT\KEIL_C51\18221197.O (18221197)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C?UIDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C?SIDIV)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  C:\USERS\HARRY\DESKTOP\实验\实验一：指令应用程序设计实验\CODE\OUT\KEIL_C51\CODE (18221
+>> 197)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   0001E2H   CODE
+I:000000H   I:000000H   I:00007FH   000018H   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  C:\USERS\HARRY\DESKTOP\实验\实验一：指令应用程序设计实验\CODE\OUT\KEIL_C51\CODE (18221197)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000017H   000010H   BYTE   UNIT     DATA           ?DT?18221197
+000018H   000018H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00008EH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+00008FH   000119H   00008BH   BYTE   UNIT     CODE           ?C?LIB_CODE
+00011AH   000152H   000039H   BYTE   UNIT     CODE           ?PR?DEC_2_BCD?18221197
+000153H   000180H   00002EH   BYTE   UNIT     CODE           ?PR?MEAN?18221197
+000181H   00019FH   00001FH   BYTE   UNIT     CODE           ?C_INITSEG
+0001A0H   0001B7H   000018H   BYTE   UNIT     CODE           ?PR?MAXX?18221197
+0001B8H   0001CFH   000018H   BYTE   UNIT     CODE           ?PR?MINN?18221197
+0001D0H   0001E1H   000012H   BYTE   UNIT     CODE           ?PR?MAIN?18221197
+
+
+
+OVERLAY MAP OF MODULE:   C:\USERS\HARRY\DESKTOP\实验\实验一：指令应用程序设计实验\CODE\OUT\KEIL_C51\CODE (18221197)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/18221197
+  +--> ?C_INITSEG
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/07/2020  22:27:24  PAGE 2
+
+
+
+MAIN/18221197               ----- -----  ----- -----
+  +--> MAXX/18221197
+  +--> MINN/18221197
+  +--> MEAN/18221197
+  +--> DEC_2_BCD/18221197
+
+MAXX/18221197               ----- -----  ----- -----
+
+MINN/18221197               ----- -----  ----- -----
+
+MEAN/18221197               ----- -----  ----- -----
+
+DEC_2_BCD/18221197          ----- -----  ----- -----
+
+?C_INITSEG                  ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  C:\USERS\HARRY\DESKTOP\实验\实验一：指令应用程序设计实验\CODE\OUT\KEIL_C51\CODE (18221197)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      010000E4H   CODE     ---       ?C?SIDIV
+      0100008FH   CODE     ---       ?C?UIDIV
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      0100004AH   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      0000000AH   DATA     BYTE      AVG
+      00000008H   DATA     BYTE      BCDH
+      00000009H   DATA     BYTE      BCDL
+      0100011AH   CODE     ---       DEC_2_BCD
+      010001D0H   CODE     ---       main
+      0000000CH   DATA     BYTE      MAX
+      010001A0H   CODE     ---       maxx
+      01000153H   CODE     ---       mean
+      0000000BH   DATA     BYTE      MIN
+      010001B8H   CODE     ---       minn
+      0000000DH   DATA     ---       s
+      00000017H   DATA     BYTE      SUM
+
+
+
+SYMBOL TABLE OF MODULE:  C:\USERS\HARRY\DESKTOP\实验\实验一：指令应用程序设计实验\CODE\OUT\KEIL_C51\CODE (18221197)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       18221197
+      00000017H   PUBLIC    DATA     BYTE      SUM
+      0000000DH   PUBLIC    DATA     ---       s
+      0000000CH   PUBLIC    DATA     BYTE      MAX
+      0000000BH   PUBLIC    DATA     BYTE      MIN
+      0000000AH   PUBLIC    DATA     BYTE      AVG
+      00000009H   PUBLIC    DATA     BYTE      BCDL
+      00000008H   PUBLIC    DATA     BYTE      BCDH
+      010001D0H   PUBLIC    CODE     ---       main
+      0100011AH   PUBLIC    CODE     ---       DEC_2_BCD
+      01000153H   PUBLIC    CODE     ---       mean
+      010001B8H   PUBLIC    CODE     ---       minn
+      010001A0H   PUBLIC    CODE     ---       maxx
+
+      010001A0H   BLOCK     CODE     ---       LVL=0
+      010001A0H   BLOCK     CODE     NEAR LAB  LVL=1
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/07/2020  22:27:24  PAGE 3
+
+
+      00000007H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010001B8H   BLOCK     CODE     ---       LVL=0
+      010001B8H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     VOID      i
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000153H   BLOCK     CODE     ---       LVL=0
+      01000153H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     VOID      i
+      00000004H   SYMBOL    DATA     VOID      sum
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100011AH   BLOCK     CODE     ---       LVL=0
+      0100011AH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000007H   SYMBOL    DATA     VOID      tmp
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010001D0H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C?UIDIV
+      0100008FH   PUBLIC    CODE     ---       ?C?UIDIV
+
+      ---         MODULE    ---      ---       ?C?SIDIV
+      010000E4H   PUBLIC    CODE     ---       ?C?SIDIV
+
+      ---         MODULE    ---      ---       ?C_INIT
+      0100004AH   PUBLIC    CODE     ---       ?C_START
+
+Program Size: data=25.0 xdata=0 const=0 code=482
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
