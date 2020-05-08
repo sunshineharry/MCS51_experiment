@@ -1,4 +1,4 @@
-#include "REG51.H"
+#include "8051.H"
 
 // 外中断初始化函数
 void EX0_init()

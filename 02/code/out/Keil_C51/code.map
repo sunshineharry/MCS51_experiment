@@ -1,0 +1,147 @@
+LX51 LINKER/LOCATER V4.66.1.0                                                           05/08/2020  12:10:57  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
+C:\PROGRAM FILES\KEIL\C51\BIN\LX51.EXE c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³Ì
+>> ÊµÑé\02\code\out\Keil_C51\interrupt.o, c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿
+>> Î³ÌÊµÑé\02\code\out\Keil_C51\main.o, c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³
+>> ÌÊµÑé\02\code\out\Keil_C51\tasks.o TO c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î
+>> ³ÌÊµÑé\02\code\out\Keil_C51\code PRINT (c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\
+>> ¿Î³ÌÊµÑé\02\code\out\Keil_C51\code.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: LARGE
+
+
+INPUT MODULES INCLUDED:
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\02\code\out\Keil_C51\interrupt.o
+>>  (INTERRUPT)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\02\code\out\Keil_C51\main.o (MAI
+>> N)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\02\code\out\Keil_C51\tasks.o (TA
+>> SKS)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51L.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51L.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\
+>> 02\code\out\Keil_C51\code (INTERRUPT)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   0000C4H   CODE
+X:000000H   X:000000H   X:00FFFFH   000001H   XDATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+I:000000H   I:000000H   I:00007FH   000008H   DATA
+
+
+MEMORY MAP OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\02\code\out
+>> \Keil_C51\code (INTERRUPT)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000008H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   000005H   000003H   BYTE   OFFS..   CODE           ?TASKS?00003
+000006H   000091H   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+000092H   0000B0H   00001FH   BYTE   UNIT     CODE           ?PR?CONTINUEE?TASKS
+0000B1H   0000B9H   000009H   BYTE   UNIT     CODE           ?PR?EX0_INIT?INTERRUPT
+0000BAH   0000BEH   000005H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
+0000BFH   0000C3H   000005H   BYTE   UNIT     CODE           ?C_INITSEG
+
+* * * * * * * * * * *  X D A T A   M E M O R Y  * * * * * * * * * * * * *
+000000H   000000H   000001H   BYTE   UNIT     XDATA          ?XD?TASKS
+
+
+
+OVERLAY MAP OF MODULE:   c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\02\code\o
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  12:10:57  PAGE 2
+
+
+>> ut\Keil_C51\code (INTERRUPT)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+CONTINUEE/TASKS             ----- -----  ----- -----
+
+*** NEW ROOT **************
+
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                   ----- -----  ----- -----
+  +--> EX0_INIT/INTERRUPT
+
+EX0_INIT/INTERRUPT          ----- -----  ----- -----
+
+?C_INITSEG                  ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\02\code
+>> \out\Keil_C51\code (INTERRUPT)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      0100004DH   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      01000092H   CODE     ---       continuee
+      010000B1H   CODE     ---       EX0_init
+      02000000H   XDATA    BYTE      i
+      010000BAH   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\02\code\o
+>> ut\Keil_C51\code (INTERRUPT)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       INTERRUPT
+      010000B1H   PUBLIC    CODE     ---       EX0_init
+
+      010000B1H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MAIN
+      010000BAH   PUBLIC    CODE     ---       main
+
+      010000BAH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       TASKS
+      02000000H   PUBLIC    XDATA    BYTE      i
+      01000092H   PUBLIC    CODE     ---       continuee
+
+      01000092H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  12:10:57  PAGE 3
+
+
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C_INIT
+      0100004DH   PUBLIC    CODE     ---       ?C_START
+
+Program Size: data=9.0 xdata=1 const=0 code=196
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

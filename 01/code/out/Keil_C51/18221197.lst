@@ -1,26 +1,27 @@
-C51 COMPILER V9.52.0.0   18221197                                                          05/07/2020 22:27:24 PAGE 1   
+C51 COMPILER V9.52.0.0   18221197                                                          05/08/2020 11:51:01 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE 18221197
-OBJECT MODULE PLACED IN c:\Users\Harry\Desktop\สตั้\สตั้าปฃบึธม๎ำฆำรณฬะ๒ษ่ผฦสตั้\code\out\Keil_C51\18221197.o
-COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe C:\USERS\HARRY\DESKTOP\สตั้\สตั้าปฃบึธม๎ำฆำรณฬะ๒ษ่ผฦสตั้\CODE
-                    -\SRC\18221197.C PRINT(c:\Users\Harry\Desktop\สตั้\สตั้าปฃบึธม๎ำฆำรณฬะ๒ษ่ผฦสตั้\code\out\Keil_C51\18221197.lst) OMF2 TABS
-                    -(2) OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(c:\Users\Harry\Desktop\สตั้\สตั้าปฃบึธม๎ำฆำรณฬะ๒ษ่ผฦสตั้\code\dependence;c
-                    -:\Users\Harry\Desktop\สตั้\สตั้าปฃบึธม๎ำฆำรณฬะ๒ษ่ผฦสตั้\code\src;c:\Users\Harry\Desktop\สตั้\สตั้าปฃบึธม๎ำฆำรณฬะ๒ษ่ผฦสตั
-                    -้\code\dependence\build-in\toolchain) DEFINE(__UVISION_VERSION) OBJECT(c:\Users\Harry\Desktop\สตั้\สตั้าปฃบึธม๎ำฆำรณฬะ๒ษ
-                    -่ผฦสตั้\code\out\Keil_C51\18221197.o)
+OBJECT MODULE PLACED IN c:\Users\Harry\Documents\OneDrive - ODMAIL\ังฯฐืสมฯ\ด๓ถþฯยังฦฺ\ฮขป๚ิญภํ\สตั้\ฟฮณฬสตั้\01\code\out\Keil_C51\18221197.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe c:\Users\Harry\Documents\OneDrive - ODMAIL\ังฯฐืสมฯ\ด๓ถþฯยังฦ
+                    -ฺ\ฮขป๚ิญภํ\สตั้\ฟฮณฬสตั้\01\code\src\18221197.c PRINT(c:\Users\Harry\Documents\OneDrive - ODMAIL\ังฯฐืสมฯ\ด๓ถþฯยังฦฺ\ฮขป
+                    -๚ิญภํ\สตั้\ฟฮณฬสตั้\01\code\out\Keil_C51\18221197.lst) OMF2 TABS(2) OPTIMIZE(8,SPEED) SMALL ROM(LARGE) INCDIR(c:\Users\H
+                    -arry\Documents\OneDrive - ODMAIL\ังฯฐืสมฯ\ด๓ถþฯยังฦฺ\ฮขป๚ิญภํ\สตั้\ฟฮณฬสตั้\01\code\dependence;c:\Users\Harry\Documents\
+                    -OneDrive - ODMAIL\ังฯฐืสมฯ\ด๓ถþฯยังฦฺ\ฮขป๚ิญภํ\สตั้\ฟฮณฬสตั้\01\code\src;c:\Users\Harry\Documents\OneDrive - ODMAIL\ังฯฐ
+                    -ืสมฯ\ด๓ถþฯยังฦฺ\ฮขป๚ิญภํ\สตั้\ฟฮณฬสตั้\01\code\dependence\build-in\toolchain) DEFINE(__UVISION_VERSION) OBJECT(c:\Users\
+                    -Harry\Documents\OneDrive - ODMAIL\ังฯฐืสมฯ\ด๓ถþฯยังฦฺ\ฮขป๚ิญภํ\สตั้\ฟฮณฬสตั้\01\code\out\Keil_C51\18221197.o)
 
 line level    source
 
    1          // ิคดฆภํึธม๎ฃฌอจนý DEBUG บ๊ฟุึฦ gdb ต๗สิป๒ keil ฑเา๋
-   2          #define DEBUG 0
+   2          #define DEBUG 1
    3          #if DEBUG
-                  #include "stdio.h"
-                  #define uchar int
-              #else
-   7              #include "reg51.h"
-   8              #define uchar unsigned char
-   9          #endif
+   4              #include "stdio.h"
+   5              #define uchar int
+   6          #else
+                  #include "reg51.h"
+                  #define uchar unsigned char
+              #endif
   10          
   11          uchar s[10]={0x10,0x35,0xa3,0xf7,0x2d,0x9d,0xe8,0x04,0x87,0xd0};    // 10ธ๖ฮÞท๛บลสý
   12          uchar MAX = 0, MIN = 0, SUM = 0, BCDH = 0, BCDL = 0, AVG = 0;       // ดๆดขฝแน๛
@@ -61,9 +62,9 @@ line level    source
   47   1          uchar tmp = 0;
   48   1          if (SUM>100)
   49   1              BCDH = SUM / 100;           // ฐูฮปหอศ๋ BCDH
-  50   1          BCDL = SUM % 10;                // ธ๖ฮปหอศ๋ BCDL ตฤตอ4ฮป 
-C51 COMPILER V9.52.0.0   18221197                                                          05/07/2020 22:27:24 PAGE 2   
+C51 COMPILER V9.52.0.0   18221197                                                          05/08/2020 11:51:01 PAGE 2   
 
+  50   1          BCDL = SUM % 10;                // ธ๖ฮปหอศ๋ BCDL ตฤตอ4ฮป 
   51   1          tmp = ((SUM -BCDL)/10) % 10;
   52   1          tmp = tmp<<4;
   53   1          BCDL += tmp;                    // สฎฮปหอศ๋ BCDL ตฤธ฿4ฮป 
@@ -83,11 +84,11 @@ line level    source
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    169    ----
+   CODE SIZE        =    284    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =     16    ----
+   DATA SIZE        =     32    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
    EDATA SIZE       =   ----    ----
