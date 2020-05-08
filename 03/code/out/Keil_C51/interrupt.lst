@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   INTERRUPT                                                         05/08/2020 11:33:22 PAGE 1   
+C51 COMPILER V9.52.0.0   INTERRUPT                                                         05/08/2020 11:39:07 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE INTERRUPT
@@ -13,7 +13,7 @@ COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe c:\Users\Harry\Docume
 
 line level    source
 
-   1          #include "REG51.H"
+   1          #include "8051.H"
    2          
    3          
    4          void TIM_0_init(void)
@@ -62,7 +62,7 @@ line level    source
 MODULE INFORMATION:   STATIC OVERLAYABLE
    CODE SIZE        =     52    ----
    CONSTANT SIZE    =   ----    ----
-C51 COMPILER V9.52.0.0   INTERRUPT                                                         05/08/2020 11:33:22 PAGE 2   
+C51 COMPILER V9.52.0.0   INTERRUPT                                                         05/08/2020 11:39:07 PAGE 2   
 
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----

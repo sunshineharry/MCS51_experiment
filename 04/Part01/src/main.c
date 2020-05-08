@@ -8,7 +8,7 @@ uchar num_encode[] = /* 共阴极数码管前有反相器，使用共阳极编码*/
 uchar LED_num[] =   /* 选择哪个 LED 二极管亮，如果是 0 ，表示都熄灭*/
     {255,223,239,247,251,253,254};
 
-void delay1ms(void)   //误差 0us
+void delay1ms(void) //延时1ms，误差 0us
 {
     unsigned char a,b,c;
     for(c=1;c>0;c--)

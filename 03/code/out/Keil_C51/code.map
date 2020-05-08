@@ -1,4 +1,4 @@
-LX51 LINKER/LOCATER V4.66.1.0                                                           05/08/2020  11:33:23  PAGE 1
+LX51 LINKER/LOCATER V4.66.1.0                                                           05/08/2020  11:39:23  PAGE 1
 
 
 LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
@@ -67,7 +67,7 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 0000B6H   0000C7H   000012H   BYTE   INBLOCK  CODE           ?PR?TIM_0_INIT?INTERRUPT
 0000C8H   0000D9H   000012H   BYTE   INBLOCK  CODE           ?PR?TIM_1_INIT?INTERRUPT
 0000DAH   0000DDH   000004H   BYTE   INBLOCK  CODE           ?PR?INIT?MAIN
-LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:33:23  PAGE 2
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:39:23  PAGE 2
 
 
 0000DEH   0000E0H   000003H   BYTE   INBLOCK  CODE           ?PR?TIM_0_PAUSE?INTERRUPT
@@ -135,7 +135,7 @@ PUBLIC SYMBOLS OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´
       01000000H   CODE     ---       ?C_STARTUP
       00000008H   DATA     BYTE      ctrl_led
       00000009H   DATA     BYTE      i
-LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:33:23  PAGE 3
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:39:23  PAGE 3
 
 
       010000DAH   CODE     ---       init
@@ -203,7 +203,7 @@ SYMBOL TABLE OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶
 
       0100009DH   BLOCK     CODE     ---       LVL=0
       ---         BLOCKEND  ---      ---       LVL=0
-LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:33:23  PAGE 4
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:39:23  PAGE 4
 
 
 
