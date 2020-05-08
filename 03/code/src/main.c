@@ -1,4 +1,4 @@
-#include "REG51.H"
+#include "8051.H"
 #include "interrupt_func.h"
 
 void init()     // 初始化定时器和计数器

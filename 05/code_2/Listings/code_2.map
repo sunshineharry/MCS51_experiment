@@ -1,4 +1,4 @@
-LX51 LINKER/LOCATER V4.66.1.0                                                           05/01/2020  16:46:56  PAGE 1
+LX51 LINKER/LOCATER V4.66.1.0                                                           05/08/2020  11:34:52  PAGE 1
 
 
 LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
@@ -67,7 +67,7 @@ PUBLIC SYMBOLS OF MODULE:  .\keilOut\code_2 (MAIN)
       00000000H   NUMBER   ---       ?C?CODESEG
       00000000H   NUMBER   ---       ?C?XDATASEG
       01000003H   CODE     ---       ?C_START
-LX51 LINKER/LOCATER V4.66.1.0                                                         05/01/2020  16:46:56  PAGE 2
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:34:52  PAGE 2
 
 
       01000000H   CODE     ---       ?C_STARTUP
@@ -135,7 +135,7 @@ PUBLIC SYMBOLS OF MODULE:  .\keilOut\code_2 (MAIN)
 *SFR* 00000087H   DATA     BYTE      PCON
 *SFR* 000000B8H.4 DATA     BIT       PS
 *SFR* 000000D0H   DATA     BYTE      PSW
-LX51 LINKER/LOCATER V4.66.1.0                                                         05/01/2020  16:46:56  PAGE 3
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:34:52  PAGE 3
 
 
 *SFR* 000000B8H.1 DATA     BIT       PT0
@@ -203,7 +203,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code_2 (MAIN)
       000000D0H.2 SFRSYM    DATA     BIT       OV
       000000B0H.6 SFRSYM    DATA     BIT       WR
       00000080H   SFRSYM    DATA     BIT       P00
-LX51 LINKER/LOCATER V4.66.1.0                                                         05/01/2020  16:46:56  PAGE 4
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:34:52  PAGE 4
 
 
       00000090H   SFRSYM    DATA     BIT       P10
@@ -271,7 +271,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code_2 (MAIN)
       000000D0H.4 SFRSYM    DATA     BIT       RS1
       00000088H.6 SFRSYM    DATA     BIT       TR1
       000000B8H   SFRSYM    DATA     BIT       PX0
-LX51 LINKER/LOCATER V4.66.1.0                                                         05/01/2020  16:46:56  PAGE 5
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:34:52  PAGE 5
 
 
       000000B8H.2 SFRSYM    DATA     BIT       PX1

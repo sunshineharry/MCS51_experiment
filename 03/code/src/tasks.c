@@ -1,18 +1,20 @@
-#include "reg51.h"
+#include "8051.h"
 #include "interrupt_func.h"
 #define uchar unsigned char
 void update(void);
 
 uchar ctrl_led  = 0xFE;
 
-void press_twice() interrupt 3      // 当按键按下两次后，计数器 TIM_1 产生中断
+// 当按键按下两次后，计数器 TIM_1 产生中断
+void press_twice() interrupt(TIM1_VECTOR)     
 {
     TIM_0_continue();               // 打开定时器 TIM_0
 }
 
 
+// 当定时器 TIM_0 产生中断，即50ms 时间到
 uchar i = 0;
-void shine_led() interrupt 1        // 当定时器 TIM_0 产生中断，即50ms 时间到
+void shine_led() interrupt(TIM0_VECTOR)        
 {
     TIM_0_continue();               // 定时器 TIM_0 手动重装
     i++;

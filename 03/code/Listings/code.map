@@ -1,4 +1,4 @@
-LX51 LINKER/LOCATER V4.66.1.0                                                           04/24/2020  20:46:15  PAGE 1
+LX51 LINKER/LOCATER V4.66.1.0                                                           05/08/2020  11:36:33  PAGE 1
 
 
 LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
@@ -27,7 +27,7 @@ ACTIVE MEMORY CLASSES OF MODULE:  .\keilOut\code (INTERRUPT)
 
 BASE        START       END         USED      MEMORY CLASS
 ==========================================================
-C:000000H   C:000000H   C:00FFFFH   000175H   CODE
+C:000000H   C:000000H   C:00FFFFH   000172H   CODE
 I:000000H   I:000000H   I:00007FH   00000AH   DATA
 I:000000H   I:000000H   I:0000FFH   000001H   IDATA
 
@@ -45,31 +45,33 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 
 * * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
 000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
-000003H   00000AH   000008H   BYTE   INBLOCK  CODE           ?PR?MAIN?MAIN
+000003H   000009H   000007H   BYTE   INBLOCK  CODE           ?PR?MAIN?MAIN
+00000AH   00000AH   000001H   ---    ---      **GAP**
 00000BH   00000CH   000002H   BYTE   OFFS..   CODE           ?TASKS?0000B
 00000DH   000015H   000009H   BYTE   INBLOCK  CODE           ?PR?TIM_0_CONTINUE?INTERRUPT
-000016H   00001AH   000005H   BYTE   INBLOCK  CODE           ?PR?INIT?MAIN
+000016H   000019H   000004H   BYTE   INBLOCK  CODE           ?PR?TIM_1_RRESTART?INTERRUPT
+00001AH   00001AH   000001H   ---    ---      **GAP**
 00001BH   00001CH   000002H   BYTE   OFFS..   CODE           ?TASKS?0001B
 00001DH   000062H   000046H   BYTE   INBLOCK  CODE           ?PR?SHINE_LED?TASKS
 000063H   00009CH   00003AH   BYTE   INBLOCK  CODE           ?PR?PRESS_TWICE?TASKS
-00009DH   0000B6H   00001AH   BYTE   INBLOCK  CODE           ?PR?UPDATE?TASKS
-0000B7H   0000C8H   000012H   BYTE   INBLOCK  CODE           ?PR?TIM_0_INIT?INTERRUPT
-0000C9H   0000DAH   000012H   BYTE   INBLOCK  CODE           ?PR?TIM_1_INIT?INTERRUPT
-0000DBH   0000DEH   000004H   BYTE   INBLOCK  CODE           ?PR?TIM_1_RRESTART?INTERRUPT
-0000DFH   0000E1H   000003H   BYTE   INBLOCK  CODE           ?PR?TIM_0_PAUSE?INTERRUPT
-0000E2H   00016DH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
-00016EH   000174H   000007H   BYTE   UNIT     CODE           ?C_INITSEG
+00009DH   0000B5H   000019H   BYTE   INBLOCK  CODE           ?PR?UPDATE?TASKS
+0000B6H   0000C7H   000012H   BYTE   INBLOCK  CODE           ?PR?TIM_0_INIT?INTERRUPT
+0000C8H   0000D9H   000012H   BYTE   INBLOCK  CODE           ?PR?TIM_1_INIT?INTERRUPT
+0000DAH   0000DDH   000004H   BYTE   INBLOCK  CODE           ?PR?INIT?MAIN
+0000DEH   0000E0H   000003H   BYTE   INBLOCK  CODE           ?PR?TIM_0_PAUSE?INTERRUPT
+0000E1H   00016CH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+00016DH   000173H   000007H   BYTE   UNIT     CODE           ?C_INITSEG
 
 
 
 OVERLAY MAP OF MODULE:   .\keilOut\code (INTERRUPT)
 
 
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:36:33  PAGE 2
+
+
 FUNCTION/MODULE                BIT_GROUP   DATA_GROUP 
 --> CALLED FUNCTION/MODULE    START  STOP  START  STOP
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  20:46:15  PAGE 2
-
-
 ======================================================
 PRESS_TWICE/TASKS             ----- -----  ----- -----
   +--> TIM_0_CONTINUE/INTERRUPT
@@ -118,7 +120,7 @@ PUBLIC SYMBOLS OF MODULE:  .\keilOut\code (INTERRUPT)
       =================================================
       00000000H   NUMBER   ---       ?C?CODESEG
       00000000H   NUMBER   ---       ?C?XDATASEG
-      01000129H   CODE     ---       ?C_START
+      01000128H   CODE     ---       ?C_START
       01000000H   CODE     ---       ?C_STARTUP
 *SFR* 000000D0H.6 DATA     BIT       AC
 *SFR* 000000E0H   DATA     BYTE      ACC
@@ -133,15 +135,15 @@ PUBLIC SYMBOLS OF MODULE:  .\keilOut\code (INTERRUPT)
 *SFR* 000000A8H.3 DATA     BIT       ET1
 *SFR* 000000A8H   DATA     BIT       EX0
 *SFR* 000000A8H.2 DATA     BIT       EX1
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:36:33  PAGE 3
+
+
 *SFR* 000000D0H.5 DATA     BIT       F0
       00000009H   DATA     BYTE      i
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  20:46:15  PAGE 3
-
-
 *SFR* 000000A8H   DATA     BYTE      IE
 *SFR* 00000088H.1 DATA     BIT       IE0
 *SFR* 00000088H.3 DATA     BIT       IE1
-      01000016H   CODE     ---       init
+      010000DAH   CODE     ---       init
 *SFR* 000000B0H.2 DATA     BIT       INT0
 *SFR* 000000B0H.3 DATA     BIT       INT1
 *SFR* 000000B8H   DATA     BYTE      IP
@@ -186,10 +188,10 @@ PUBLIC SYMBOLS OF MODULE:  .\keilOut\code (INTERRUPT)
 *SFR* 0000008DH   DATA     BYTE      TH1
 *SFR* 00000098H.1 DATA     BIT       TI
       0100000DH   CODE     ---       TIM_0_continue
-      010000B7H   CODE     ---       TIM_0_init
-      010000DFH   CODE     ---       TIM_0_pause
-      010000C9H   CODE     ---       TIM_1_init
-      010000DBH   CODE     ---       TIM_1_rrestart
+      010000B6H   CODE     ---       TIM_0_init
+      010000DEH   CODE     ---       TIM_0_pause
+      010000C8H   CODE     ---       TIM_1_init
+      01000016H   CODE     ---       TIM_1_rrestart
 *SFR* 0000008AH   DATA     BYTE      TL0
 *SFR* 0000008BH   DATA     BYTE      TL1
 *SFR* 00000089H   DATA     BYTE      TMOD
@@ -201,19 +203,19 @@ PUBLIC SYMBOLS OF MODULE:  .\keilOut\code (INTERRUPT)
 
 
 
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:36:33  PAGE 4
+
+
 SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
-
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  20:46:15  PAGE 4
-
 
       VALUE       REP       CLASS    TYPE      SYMBOL NAME
       ====================================================
       ---         MODULE    ---      ---       INTERRUPT
-      010000DBH   PUBLIC    CODE     ---       TIM_1_rrestart
-      010000C9H   PUBLIC    CODE     ---       TIM_1_init
-      010000DFH   PUBLIC    CODE     ---       TIM_0_pause
+      01000016H   PUBLIC    CODE     ---       TIM_1_rrestart
+      010000C8H   PUBLIC    CODE     ---       TIM_1_init
+      010000DEH   PUBLIC    CODE     ---       TIM_0_pause
       0100000DH   PUBLIC    CODE     ---       TIM_0_continue
-      010000B7H   PUBLIC    CODE     ---       TIM_0_init
+      010000B6H   PUBLIC    CODE     ---       TIM_0_init
       00000080H   SFRSYM    DATA     BYTE      P0
       00000090H   SFRSYM    DATA     BYTE      P1
       000000A0H   SFRSYM    DATA     BYTE      P2
@@ -269,11 +271,11 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       000000D0H.4 SFRSYM    DATA     BIT       RS1
       00000088H.6 SFRSYM    DATA     BIT       TR1
       000000B8H   SFRSYM    DATA     BIT       PX0
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:36:33  PAGE 5
+
+
       000000B8H.2 SFRSYM    DATA     BIT       PX1
       00000083H   SFRSYM    DATA     BYTE      DPH
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  20:46:15  PAGE 5
-
-
       00000082H   SFRSYM    DATA     BYTE      DPL
       00000098H.4 SFRSYM    DATA     BIT       REN
       000000B0H   SFRSYM    DATA     BIT       RXD
@@ -281,17 +283,17 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       000000D0H.5 SFRSYM    DATA     BIT       F0
       000000D0H   SFRSYM    DATA     BYTE      PSW
 
-      010000B7H   BLOCK     CODE     ---       LVL=0
-      010000B7H   LINE      CODE     ---       #4
-      010000B7H   LINE      CODE     ---       #5
-      010000B7H   LINE      CODE     ---       #7
-      010000BAH   LINE      CODE     ---       #8
-      010000BDH   LINE      CODE     ---       #9
-      010000C0H   LINE      CODE     ---       #10
-      010000C2H   LINE      CODE     ---       #11
-      010000C4H   LINE      CODE     ---       #12
-      010000C6H   LINE      CODE     ---       #13
-      010000C8H   LINE      CODE     ---       #14
+      010000B6H   BLOCK     CODE     ---       LVL=0
+      010000B6H   LINE      CODE     ---       #4
+      010000B6H   LINE      CODE     ---       #5
+      010000B6H   LINE      CODE     ---       #7
+      010000B9H   LINE      CODE     ---       #8
+      010000BCH   LINE      CODE     ---       #9
+      010000BFH   LINE      CODE     ---       #10
+      010000C1H   LINE      CODE     ---       #11
+      010000C3H   LINE      CODE     ---       #12
+      010000C5H   LINE      CODE     ---       #13
+      010000C7H   LINE      CODE     ---       #14
       ---         BLOCKEND  ---      ---       LVL=0
 
       0100000DH   BLOCK     CODE     ---       LVL=0
@@ -303,45 +305,45 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       01000015H   LINE      CODE     ---       #21
       ---         BLOCKEND  ---      ---       LVL=0
 
-      010000DFH   BLOCK     CODE     ---       LVL=0
-      010000DFH   LINE      CODE     ---       #23
-      010000DFH   LINE      CODE     ---       #24
-      010000DFH   LINE      CODE     ---       #25
-      010000E1H   LINE      CODE     ---       #26
+      010000DEH   BLOCK     CODE     ---       LVL=0
+      010000DEH   LINE      CODE     ---       #23
+      010000DEH   LINE      CODE     ---       #24
+      010000DEH   LINE      CODE     ---       #25
+      010000E0H   LINE      CODE     ---       #26
       ---         BLOCKEND  ---      ---       LVL=0
 
-      010000C9H   BLOCK     CODE     ---       LVL=0
-      010000C9H   LINE      CODE     ---       #28
-      010000C9H   LINE      CODE     ---       #29
-      010000C9H   LINE      CODE     ---       #31
-      010000CCH   LINE      CODE     ---       #32
-      010000CFH   LINE      CODE     ---       #33
-      010000D2H   LINE      CODE     ---       #34
-      010000D4H   LINE      CODE     ---       #35
-      010000D6H   LINE      CODE     ---       #36
-      010000D8H   LINE      CODE     ---       #37
-      010000DAH   LINE      CODE     ---       #38
+      010000C8H   BLOCK     CODE     ---       LVL=0
+      010000C8H   LINE      CODE     ---       #28
+      010000C8H   LINE      CODE     ---       #29
+      010000C8H   LINE      CODE     ---       #31
+      010000CBH   LINE      CODE     ---       #32
+      010000CEH   LINE      CODE     ---       #33
+      010000D1H   LINE      CODE     ---       #34
+      010000D3H   LINE      CODE     ---       #35
+      010000D5H   LINE      CODE     ---       #36
+      010000D7H   LINE      CODE     ---       #37
+      010000D9H   LINE      CODE     ---       #38
       ---         BLOCKEND  ---      ---       LVL=0
 
-      010000DBH   BLOCK     CODE     ---       LVL=0
-      010000DBH   LINE      CODE     ---       #41
-      010000DBH   LINE      CODE     ---       #42
-      010000DBH   LINE      CODE     ---       #43
-      010000DEH   LINE      CODE     ---       #44
+      01000016H   BLOCK     CODE     ---       LVL=0
+      01000016H   LINE      CODE     ---       #41
+      01000016H   LINE      CODE     ---       #42
+      01000016H   LINE      CODE     ---       #43
+      01000019H   LINE      CODE     ---       #44
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       MAIN
       01000003H   PUBLIC    CODE     ---       main
-      01000016H   PUBLIC    CODE     ---       init
+      010000DAH   PUBLIC    CODE     ---       init
       00000080H   SFRSYM    DATA     BYTE      P0
       00000090H   SFRSYM    DATA     BYTE      P1
       000000A0H   SFRSYM    DATA     BYTE      P2
       000000B0H   SFRSYM    DATA     BYTE      P3
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:36:33  PAGE 6
+
+
       000000B0H.4 SFRSYM    DATA     BIT       T0
       000000D0H.6 SFRSYM    DATA     BIT       AC
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  20:46:15  PAGE 6
-
-
       000000B0H.5 SFRSYM    DATA     BIT       T1
       000000A8H.7 SFRSYM    DATA     BIT       EA
       000000A8H   SFRSYM    DATA     BYTE      IE
@@ -400,16 +402,15 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       000000D0H.5 SFRSYM    DATA     BIT       F0
       000000D0H   SFRSYM    DATA     BYTE      PSW
 
-      01000016H   BLOCK     CODE     ---       LVL=0
-      01000016H   LINE      CODE     ---       #4
-      01000016H   LINE      CODE     ---       #5
-      01000016H   LINE      CODE     ---       #6
-      01000018H   LINE      CODE     ---       #7
-      0100001AH   LINE      CODE     ---       #8
+      010000DAH   BLOCK     CODE     ---       LVL=0
+      010000DAH   LINE      CODE     ---       #4
+      010000DAH   LINE      CODE     ---       #5
+      010000DAH   LINE      CODE     ---       #6
+      010000DCH   LINE      CODE     ---       #7
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:36:33  PAGE 7
+
+
       ---         BLOCKEND  ---      ---       LVL=0
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  20:46:15  PAGE 7
-
-
 
       01000003H   BLOCK     CODE     ---       LVL=0
       01000003H   LINE      CODE     ---       #11
@@ -417,7 +418,6 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       01000003H   LINE      CODE     ---       #13
       01000005H   LINE      CODE     ---       #14
       01000008H   LINE      CODE     ---       #15
-      0100000AH   LINE      CODE     ---       #16
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       TASKS
@@ -475,7 +475,7 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       0000008BH   SFRSYM    DATA     BYTE      TL1
       00000098H.5 SFRSYM    DATA     BIT       SM2
       000000B8H.1 SFRSYM    DATA     BIT       PT0
-LX51 LINKER/LOCATER V4.66.1.0                                                         04/24/2020  20:46:15  PAGE 8
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:36:33  PAGE 8
 
 
       000000B8H.3 SFRSYM    DATA     BIT       PT1
@@ -521,18 +521,18 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code (INTERRUPT)
       010000A8H   LINE      CODE     ---       #32
       010000AAH   LINE      CODE     ---       #33
       010000ACH   LINE      CODE     ---       #34
-      010000ADH   LINE      CODE     ---       #36
-      010000ADH   LINE      CODE     ---       #37
-      010000B3H   LINE      CODE     ---       #38
-      010000B6H   LINE      CODE     ---       #39
-      010000B6H   LINE      CODE     ---       #40
+      010000ACH   LINE      CODE     ---       #36
+      010000ACH   LINE      CODE     ---       #37
+      010000B2H   LINE      CODE     ---       #38
+      010000B5H   LINE      CODE     ---       #39
+      010000B5H   LINE      CODE     ---       #40
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       ?C_STARTUP
       01000000H   PUBLIC    CODE     ---       ?C_STARTUP
 
       ---         MODULE    ---      ---       ?C_INIT
-      01000129H   PUBLIC    CODE     ---       ?C_START
+      01000128H   PUBLIC    CODE     ---       ?C_START
 
-Program Size: data=11.0 xdata=0 const=0 code=373
+Program Size: data=11.0 xdata=0 const=0 code=370
 LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

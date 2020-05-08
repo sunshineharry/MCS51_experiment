@@ -1,4 +1,4 @@
-#include "REG51.H"
+#include "8051.H"
 
 
 void TIM_0_init(void)

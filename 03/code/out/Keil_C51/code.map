@@ -1,0 +1,217 @@
+LX51 LINKER/LOCATER V4.66.1.0                                                           05/08/2020  11:33:23  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
+C:\PROGRAM FILES\KEIL\C51\BIN\LX51.EXE c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³Ì
+>> ÊµÑé\03\code\out\Keil_C51\interrupt.o, c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿
+>> Î³ÌÊµÑé\03\code\out\Keil_C51\main.o, c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³
+>> ÌÊµÑé\03\code\out\Keil_C51\tasks.o TO c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î
+>> ³ÌÊµÑé\03\code\out\Keil_C51\code PRINT (c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\
+>> ¿Î³ÌÊµÑé\03\code\out\Keil_C51\code.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\03\code\out\Keil_C51\interrupt.o
+>>  (INTERRUPT)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\03\code\out\Keil_C51\main.o (MAI
+>> N)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\03\code\out\Keil_C51\tasks.o (TA
+>> SKS)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\
+>> 03\code\out\Keil_C51\code (INTERRUPT)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000172H   CODE
+I:000000H   I:000000H   I:00007FH   00000AH   DATA
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+
+
+MEMORY MAP OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\03\code\out
+>> \Keil_C51\code (INTERRUPT)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000009H   000002H   BYTE   UNIT     DATA           ?DT?TASKS
+00000AH   00000AH   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   000009H   000007H   BYTE   INBLOCK  CODE           ?PR?MAIN?MAIN
+00000AH   00000AH   000001H   ---    ---      **GAP**
+00000BH   00000CH   000002H   BYTE   OFFS..   CODE           ?TASKS?0000B
+00000DH   000015H   000009H   BYTE   INBLOCK  CODE           ?PR?TIM_0_CONTINUE?INTERRUPT
+000016H   000019H   000004H   BYTE   INBLOCK  CODE           ?PR?TIM_1_RRESTART?INTERRUPT
+00001AH   00001AH   000001H   ---    ---      **GAP**
+00001BH   00001CH   000002H   BYTE   OFFS..   CODE           ?TASKS?0001B
+00001DH   000062H   000046H   BYTE   INBLOCK  CODE           ?PR?SHINE_LED?TASKS
+000063H   00009CH   00003AH   BYTE   INBLOCK  CODE           ?PR?PRESS_TWICE?TASKS
+00009DH   0000B5H   000019H   BYTE   INBLOCK  CODE           ?PR?UPDATE?TASKS
+0000B6H   0000C7H   000012H   BYTE   INBLOCK  CODE           ?PR?TIM_0_INIT?INTERRUPT
+0000C8H   0000D9H   000012H   BYTE   INBLOCK  CODE           ?PR?TIM_1_INIT?INTERRUPT
+0000DAH   0000DDH   000004H   BYTE   INBLOCK  CODE           ?PR?INIT?MAIN
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:33:23  PAGE 2
+
+
+0000DEH   0000E0H   000003H   BYTE   INBLOCK  CODE           ?PR?TIM_0_PAUSE?INTERRUPT
+0000E1H   00016CH   00008CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+00016DH   000173H   000007H   BYTE   UNIT     CODE           ?C_INITSEG
+
+
+
+OVERLAY MAP OF MODULE:   c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\03\code\o
+>> ut\Keil_C51\code (INTERRUPT)
+
+
+FUNCTION/MODULE                BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE    START  STOP  START  STOP
+======================================================
+PRESS_TWICE/TASKS             ----- -----  ----- -----
+  +--> TIM_0_CONTINUE/INTERRUPT
+
+TIM_0_CONTINUE/INTERRUPT      ----- -----  ----- -----
+
+*** NEW ROOT ****************
+
+SHINE_LED/TASKS               ----- -----  ----- -----
+  +--> TIM_0_CONTINUE/INTERRUPT
+  +--> UPDATE/TASKS
+
+UPDATE/TASKS                  ----- -----  ----- -----
+  +--> TIM_0_PAUSE/INTERRUPT
+  +--> TIM_1_RRESTART/INTERRUPT
+
+TIM_0_PAUSE/INTERRUPT         ----- -----  ----- -----
+
+TIM_1_RRESTART/INTERRUPT      ----- -----  ----- -----
+
+*** NEW ROOT ****************
+
+?C_C51STARTUP                 ----- -----  ----- -----
+  +--> MAIN/MAIN
+  +--> ?C_INITSEG
+
+MAIN/MAIN                     ----- -----  ----- -----
+  +--> INIT/MAIN
+
+INIT/MAIN                     ----- -----  ----- -----
+  +--> TIM_0_INIT/INTERRUPT
+  +--> TIM_1_INIT/INTERRUPT
+
+TIM_0_INIT/INTERRUPT          ----- -----  ----- -----
+
+TIM_1_INIT/INTERRUPT          ----- -----  ----- -----
+
+?C_INITSEG                    ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\03\code
+>> \out\Keil_C51\code (INTERRUPT)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000128H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      00000008H   DATA     BYTE      ctrl_led
+      00000009H   DATA     BYTE      i
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:33:23  PAGE 3
+
+
+      010000DAH   CODE     ---       init
+      01000003H   CODE     ---       main
+      01000063H   CODE     ---       press_twice
+      0100001DH   CODE     ---       shine_led
+      0100000DH   CODE     ---       TIM_0_continue
+      010000B6H   CODE     ---       TIM_0_init
+      010000DEH   CODE     ---       TIM_0_pause
+      010000C8H   CODE     ---       TIM_1_init
+      01000016H   CODE     ---       TIM_1_rrestart
+      0100009DH   CODE     ---       update
+
+
+
+SYMBOL TABLE OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\03\code\o
+>> ut\Keil_C51\code (INTERRUPT)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       INTERRUPT
+      01000016H   PUBLIC    CODE     ---       TIM_1_rrestart
+      010000C8H   PUBLIC    CODE     ---       TIM_1_init
+      010000DEH   PUBLIC    CODE     ---       TIM_0_pause
+      0100000DH   PUBLIC    CODE     ---       TIM_0_continue
+      010000B6H   PUBLIC    CODE     ---       TIM_0_init
+
+      010000B6H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100000DH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010000DEH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      010000C8H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000016H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       MAIN
+      01000003H   PUBLIC    CODE     ---       main
+      010000DAH   PUBLIC    CODE     ---       init
+
+      010000DAH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       TASKS
+      00000009H   PUBLIC    DATA     BYTE      i
+      00000008H   PUBLIC    DATA     BYTE      ctrl_led
+      0100009DH   PUBLIC    CODE     ---       update
+      0100001DH   PUBLIC    CODE     ---       shine_led
+      01000063H   PUBLIC    CODE     ---       press_twice
+
+      01000063H   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100001DH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      0100009DH   BLOCK     CODE     ---       LVL=0
+      ---         BLOCKEND  ---      ---       LVL=0
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/08/2020  11:33:23  PAGE 4
+
+
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+      ---         MODULE    ---      ---       ?C_INIT
+      01000128H   PUBLIC    CODE     ---       ?C_START
+
+Program Size: data=11.0 xdata=0 const=0 code=370
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
