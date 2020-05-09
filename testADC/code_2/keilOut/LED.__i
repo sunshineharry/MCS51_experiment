@@ -1,0 +1,1 @@
+"src\LED.c" OMF2 ROM(SMALL) OPTIMIZE (8,SPEED) BROWSE INCDIR(.\dependence;.\src) DEBUG PRINT(.\Listings\LED.lst) OBJECT(.\keilOut\LED.obj)

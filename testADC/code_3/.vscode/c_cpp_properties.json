@@ -1,0 +1,30 @@
+{
+    "configurations": [
+        {
+            "name": "win32",
+            "includePath": [
+                "c:\\Users\\Harry\\Desktop\\shiyan\\testADC\\code_3\\dependence",
+                "c:\\Users\\Harry\\Desktop\\shiyan\\testADC\\code_3\\src"
+            ],
+            "defines": [
+                "__C51__",
+                "reentrant=",
+                "conpact=",
+                "small=",
+                "large=",
+                "data=",
+                "idata=",
+                "pdata=",
+                "xdata=",
+                "code=",
+                "bit=char",
+                "sbit=char",
+                "sfr=char",
+                "sfr16=int",
+                "sfr32=int"
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}
