@@ -1,50 +1,47 @@
-C51 COMPILER V9.52.0.0   MAIN                                                              05/01/2020 16:46:10 PAGE 1   
+C51 COMPILER V9.52.0.0   MAIN                                                              05/08/2020 20:54:56 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
-OBJECT MODULE PLACED IN c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\out\Keil_C51\main.o
-COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§Æ
-                    -Ú\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\src\main.c PRINT(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ
-                    -§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\out\Keil_C51\main.lst) OMF2 TABS(2) OPTIMIZE(8,SPEED) SMALL ROM(SMALL) INC
-                    -DIR(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\dependence;
-                    -c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\src;c:\Users\Ha
-                    -rry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\dependence\build-in\toolch
-                    -ain) DEFINE(__UVISION_VERSION) OBJECT(c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊ
-                    -µÑé\ÊµÑéÎå-ADDA\code_2\out\Keil_C51\main.o)
+OBJECT MODULE PLACED IN c:\Users\Harry\Desktop\shiyan\testADC\code_2\out\Keil_C51\main.o
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.exe C:\USERS\HARRY\DESKTOP\SHIYAN\TESTADC\CODE_2\SRC\MAIN.C PRINT
+                    -(c:\Users\Harry\Desktop\shiyan\testADC\code_2\out\Keil_C51\main.lst) OMF2 TABS(2) OPTIMIZE(8,SPEED) SMALL ROM(SMALL) INC
+                    -DIR(c:\Users\Harry\Desktop\shiyan\testADC\code_2\dependence;c:\Users\Harry\Desktop\shiyan\testADC\code_2\src;c:\Users\Ha
+                    -rry\Desktop\shiyan\testADC\code_2\dependence\build-in\toolchain) DEFINE(__UVISION_VERSION) OBJECT(c:\Users\Harry\Desktop
+                    -\shiyan\testADC\code_2\out\Keil_C51\main.o)
 
 line level    source
 
    1          #include "8051.h"
-   2          #include "DAC0832_func.h"
-   3          
-   4          
-   5          void delay1ms(void)   //Îó²î 0us
-   6          {
-   7   1          unsigned char a,b;
-   8   1          for(b=142;b>0;b--)
-   9   1              for(a=2;a>0;a--);
-  10   1      }
-  11          
-  12          
-  13          void main()
-  14          {
-  15   1          uchar volte = 0x00;
-  16   1          while (1)
-  17   1          {
-  18   2              DAC0832 = volte;
-  19   2              volte++;
-  20   2              delay1ms();
-  21   2          }
-  22   1          
+   2          #include "LED_func.h"
+   3          #include "ADC_func.h"
+   4          #include "interrupt_func.h"
+   5          
+   6          
+   7          uchar num = 0;
+   8          
+   9          void main()
+  10          {
+  11   1          
+  12   1          while(1)
+  13   1          {
+  14   2              
+  15   2              EX1_init();
+  16   2              LED_show(1,1);
+  17   2              ADC_choose_INO();   // Ñ¡ÔñADCµÄINO ×÷ÎªÄ£ÄâÁ¿ÊäÈë
+  18   2                                  // Ê¹ÓÃY7¿ØÖÆ£¬µØÖ· E000H
+  19   2              while (IE1 != 1);   // µ±Î´²úÉúÖÐ¶Ï£¬¼´Î´×ª»»Íê³ÉÊÇ³ÌÐòµÈ´ý
+  20   2              num = ADC_INO;      // ±£´æ×ª»»³öµÄÊý¾Ý
+  21   2              LED_show(2,1);
+  22   2          }
   23   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     21    ----
+   CODE SIZE        =     27    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----    ----
+   DATA SIZE        =      1    ----
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
    EDATA SIZE       =   ----    ----

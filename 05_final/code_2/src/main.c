@@ -1,23 +1,23 @@
 #include "8051.h"
-#include "DAC0832_func.h"
+#include "LED_func.h"
+#include "ADC_func.h"
+#include "interrupt_func.h"
 
 
-void delay1ms(void)   //误差 0us
-{
-    unsigned char a,b;
-    for(b=142;b>0;b--)
-        for(a=2;a>0;a--);
-}
 
 
 void main()
 {
-    uchar volte = 0x00;
-    while (1)
+    static uchar num = 0;
+    while(1)
     {
-        DAC0832 = volte;
-        volte++;
-        delay1ms();
+        EX1_init();
+        ADC_choose_INO();   // 选择ADC的INO 作为模拟量输入
+                            // 使用Y7控制，地址 E000H
+        while (IE1 != 1);   // 当未产生中断，即未转换完成是程序等待
+        num = ADC_INO;      // 保存转换出的数据
+        LED_show(1,num/100);
+        LED_show(2,(num%100)/10);
+        LED_show(3,num%10);
     }
-    
 }

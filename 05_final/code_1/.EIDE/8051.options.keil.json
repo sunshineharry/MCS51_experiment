@@ -8,7 +8,7 @@
     ],
     "global": {
         "ram-mode": "SMALL",
-        "rom-mode": "LARGE"
+        "rom-mode": "SMALL"
     },
     "c/cpp-compiler": {
         "optimization-type": "SPEED",

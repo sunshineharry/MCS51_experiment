@@ -1,7 +1,0 @@
-".\keilOut\ADC.obj",
-".\keilOut\interrupt.obj",
-".\keilOut\LED.obj",
-".\keilOut\main.obj" 
-TO ".\keilOut\code_2" 
-
-PRINT(".\Listings\code_2.map")

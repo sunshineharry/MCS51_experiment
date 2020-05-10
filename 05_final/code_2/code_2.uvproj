@@ -125,7 +125,7 @@
             <Oh166RecLen>16</Oh166RecLen>
           </OPTHX>
           <Simulator>
-            <UseSimulator>1</UseSimulator>
+            <UseSimulator>0</UseSimulator>
             <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
             <RunToMain>1</RunToMain>
             <RestoreBreakpoints>1</RestoreBreakpoints>
@@ -137,7 +137,7 @@
             <RestoreSysVw>1</RestoreSysVw>
           </Simulator>
           <Target>
-            <UseTarget>0</UseTarget>
+            <UseTarget>1</UseTarget>
             <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
             <RunToMain>0</RunToMain>
             <RestoreBreakpoints>1</RestoreBreakpoints>
@@ -149,7 +149,7 @@
             <RestoreSysVw>1</RestoreSysVw>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>-1</TargetSelection>
+          <TargetSelection>9</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -163,7 +163,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver></Driver>
+            <Driver>BIN\VDM51.DLL</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -377,9 +377,19 @@
           <GroupName>src</GroupName>
           <Files>
             <File>
-              <FileName>8051.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\src\8051.h</FilePath>
+              <FileName>ADC.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\ADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\interrupt.c</FilePath>
+            </File>
+            <File>
+              <FileName>LED.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\LED.c</FilePath>
             </File>
             <File>
               <FileName>main.c</FileName>
@@ -392,9 +402,34 @@
           <GroupName>dependence</GroupName>
           <Files>
             <File>
-              <FileName>DAC0832_func.h</FileName>
+              <FileName>8051.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\dependence\DAC0832_func.h</FilePath>
+              <FilePath>.\dependence\8051.h</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\dependence\ADC.h</FilePath>
+            </File>
+            <File>
+              <FileName>ADC_func.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\dependence\ADC_func.h</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt_func.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\dependence\interrupt_func.h</FilePath>
+            </File>
+            <File>
+              <FileName>LED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\dependence\LED.h</FilePath>
+            </File>
+            <File>
+              <FileName>LED_func.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\dependence\LED_func.h</FilePath>
             </File>
           </Files>
         </Group>

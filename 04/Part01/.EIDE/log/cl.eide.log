@@ -254,3 +254,8 @@
 	at f._writeNow (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:231:110)
 	at Immediate.<anonymous> (c:\Program Files\Microsoft VS Code\resources\app\out\vs\workbench\services\extensions\node\extensionHostProcess.js:231:48)
 	at processImmediate (internal/timers.js:439:21)
+
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/5/9|21:38:52|GMT+0800
+[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
+
+

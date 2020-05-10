@@ -196,11 +196,11 @@
             <UseMultipleDPTR>0</UseMultipleDPTR>
             <UseOnchipXram>0</UseOnchipXram>
             <HadIRAM>1</HadIRAM>
-            <HadXRAM>1</HadXRAM>
+            <HadXRAM>0</HadXRAM>
             <HadIROM>1</HadIROM>
             <Moda2>0</Moda2>
             <Moddp2>0</Moddp2>
-            <Modp2>1</Modp2>
+            <Modp2>0</Modp2>
             <Mod517dp>0</Mod517dp>
             <Mod517au>0</Mod517au>
             <Mode2>0</Mode2>
@@ -377,9 +377,24 @@
           <GroupName>src</GroupName>
           <Files>
             <File>
-              <FileName>ADC0808.c</FileName>
+              <FileName>8051.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\src\8051.h</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\src\ADC0808.c</FilePath>
+              <FilePath>.\src\ADC.c</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\interrupt.c</FilePath>
+            </File>
+            <File>
+              <FileName>LED.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\src\LED.c</FilePath>
             </File>
             <File>
               <FileName>main.c</FileName>
@@ -392,14 +407,39 @@
           <GroupName>dependence</GroupName>
           <Files>
             <File>
-              <FileName>ADC0808.H</FileName>
+              <FileName>8051.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\dependence\ADC0808.H</FilePath>
+              <FilePath>.\dependence\8051.h</FilePath>
             </File>
             <File>
-              <FileName>DAC0832.H</FileName>
+              <FileName>ADC.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\dependence\DAC0832.H</FilePath>
+              <FilePath>.\dependence\ADC.h</FilePath>
+            </File>
+            <File>
+              <FileName>ADC_func.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\dependence\ADC_func.h</FilePath>
+            </File>
+            <File>
+              <FileName>DAC0832_func.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\dependence\DAC0832_func.h</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt_func.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\dependence\interrupt_func.h</FilePath>
+            </File>
+            <File>
+              <FileName>LED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\dependence\LED.h</FilePath>
+            </File>
+            <File>
+              <FileName>LED_func.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\dependence\LED_func.h</FilePath>
             </File>
           </Files>
         </Group>

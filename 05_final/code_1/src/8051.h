@@ -70,7 +70,7 @@
 #include "STDDEF.H"
 #include "INTRINS.H"
 
-typedef unsigned char uint8_t;
+#define uchar unsigned char
 typedef unsigned int uint16_t;
 typedef unsigned long uint32_t;
 

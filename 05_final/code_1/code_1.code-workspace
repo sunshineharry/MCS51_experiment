@@ -14,6 +14,8 @@
         "files.associations": {
             "*.m": "matlab",
             "*.h": "c",
+            "STDDEF.H": "cpp",
+            "DAC0832.H": "cpp",
             "ABSACC.H": "cpp"
         }
     }

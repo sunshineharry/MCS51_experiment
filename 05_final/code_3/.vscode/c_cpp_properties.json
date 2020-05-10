@@ -3,10 +3,8 @@
         {
             "name": "win32",
             "includePath": [
-                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\课程实验\\05\\code_3\\dependence",
-                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\课程实验\\05\\code_3\\src",
-                "C:\\Program Files\\Keil\\C51\\INC",
-                "c:\\Users\\Harry\\Documents\\OneDrive - ODMAIL\\学习资料\\大二下学期\\微机原理\\实验\\课程实验\\05\\code_3\\dependence\\build-in\\toolchain"
+                "c:\\Users\\Harry\\Desktop\\shiyan\\testADC\\code_3\\dependence",
+                "c:\\Users\\Harry\\Desktop\\shiyan\\testADC\\code_3\\src"
             ],
             "defines": [
                 "__C51__",

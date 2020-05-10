@@ -1,15 +1,15 @@
-[2020-04-30 11:10:00]	Compilation failed at : "c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\实验\课程实验\实验五(AD&DA)\code_2\src\main.c", Exit Code: 3
+[2020-05-08 16:01:54]	Compilation failed at : "c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\实验\课程实验\testADC\code_2\src\LED.c", Exit Code: 2
    在 ARM_Builder_V6.Program.Main(String[] args)
 
-[2020-04-30 11:20:17]	Compilation failed at : "c:\Users\Harry\Desktop\ex5\code_2\src\main.c", Exit Code: 2
+[2020-05-08 17:00:08]	Compilation failed at : "c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\实验\课程实验\testADC\code_2\src\interrupt.c", Exit Code: 3
    在 ARM_Builder_V6.Program.Main(String[] args)
 
-[2020-04-30 11:59:45]	Compilation failed at : "c:\Users\Harry\Desktop\ex5\code_2\src\main.c", Exit Code: 2
+[2020-05-08 17:01:38]	Compilation failed at : "c:\Users\Harry\Desktop\shiyan\testADC\code_2\src\main.c", Exit Code: 2
    在 ARM_Builder_V6.Program.Main(String[] args)
 
-[2020-04-30 11:59:50]	Compilation failed at : "c:\Users\Harry\Desktop\ex5\code_2\src\main.c", Exit Code: 2
+[2020-05-08 20:46:25]	Compilation failed at : "c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\实验\课程实验\testADC\code_2\src\interrupt.c", Exit Code: 3
    在 ARM_Builder_V6.Program.Main(String[] args)
 
-[2020-04-30 16:51:48]	Compilation failed at : "c:\Users\Harry\Documents\OneDrive - ODMAIL\学习资料\大二下学期\微机原理\实验\课程实验\实验五-ADDA\code_2\src\main.c", Exit Code: 1
+[2020-05-08 20:47:07]	Compilation failed at : "c:\Users\Harry\Desktop\shiyan\testADC\code_2\src\main.c", Exit Code: 2
    在 ARM_Builder_V6.Program.Main(String[] args)
 

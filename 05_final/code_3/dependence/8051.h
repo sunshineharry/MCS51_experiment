@@ -71,6 +71,8 @@
 #include "INTRINS.H"
 
 #define uchar unsigned char
+
+// typedef unsigned char uint8_t;
 // typedef unsigned int uint16_t;
 // typedef unsigned long uint32_t;
 

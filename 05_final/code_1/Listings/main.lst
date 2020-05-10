@@ -1,54 +1,40 @@
-C51 COMPILER V9.52.0.0   MAIN                                                              05/01/2020 21:43:29 PAGE 1   
+C51 COMPILER V9.52.0.0   MAIN                                                              05/09/2020 15:46:26 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
 OBJECT MODULE PLACED IN .\keilOut\main.obj
-COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\main.c OMF2 OPTIMIZE(8,SPEED) BROWSE INCDIR(.\dependence;
-                    -.\src) DEBUG PRINT(.\Listings\main.lst) OBJECT(.\keilOut\main.obj)
+COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\main.c OMF2 ROM(SMALL) OPTIMIZE(8,SPEED) BROWSE INCDIR(.\
+                    -dependence;.\src) DEBUG PRINT(.\Listings\main.lst) OBJECT(.\keilOut\main.obj)
 
 line level    source
 
    1          #include "8051.h"
-   2          #define uchar unsigned char
-   3          #define start P30
-   4          #define EOC P31
-   5          #define OE P32
-   6          
-   7          void delay5ms(void)
-   8          {
-   9   1          unsigned char a,b;
-  10   1          for(b=19;b>0;b--)
-  11   1              for(a=130;a>0;a--);
-  12   1      }
-  13          
-  14          
-  15          uchar adc()
-  16          {
-  17   1          uchar val = 0;
-  18   1          start = 0;
-  19   1          start = 1;
-  20   1          delay5ms();
-  21   1          start = 0;
-  22   1          while (EOC != 1);
-  23   1          OE = 1;
-  24   1          val = P1;
-  25   1          return val; 
-  26   1      }
-  27          
-  28          
-  29          void main()
-  30          {
-  31   1          uchar v = 0;
-  32   1          while (1)
-  33   1          {
-  34   2              v = adc();
-  35   2          }
-  36   1          
-  37   1      }
+   2          #include "DAC0832_func.h"
+   3          
+   4          
+   5          void delay1ms(void)   //Îó²î 0us
+   6          {
+   7   1          unsigned char a,b;
+   8   1          for(b=142;b>0;b--)
+   9   1              for(a=2;a>0;a--);
+  10   1      }
+  11          
+  12          
+  13          void main()
+  14          {
+  15   1          uchar volte = 0x00;
+  16   1          while (1)
+  17   1          {
+  18   2              DAC0832 = volte;
+  19   2              volte++;
+  20   2              delay1ms();
+  21   2          }
+  22   1          
+  23   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     37    ----
+   CODE SIZE        =     21    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----

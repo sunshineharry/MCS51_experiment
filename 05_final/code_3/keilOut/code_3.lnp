@@ -1,4 +1,6 @@
-".\keilOut\ADC0808.obj",
+".\keilOut\ADC.obj",
+".\keilOut\interrupt.obj",
+".\keilOut\LED.obj",
 ".\keilOut\main.obj" 
 TO ".\keilOut\code_3" 
 

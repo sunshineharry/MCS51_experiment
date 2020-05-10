@@ -1,4 +1,4 @@
-LX51 LINKER/LOCATER V4.66.1.0                                                           05/01/2020  21:43:29  PAGE 1
+LX51 LINKER/LOCATER V4.66.1.0                                                           05/09/2020  15:46:26  PAGE 1
 
 
 LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
@@ -20,7 +20,7 @@ ACTIVE MEMORY CLASSES OF MODULE:  .\keilOut\code_1 (MAIN)
 
 BASE        START       END         USED      MEMORY CLASS
 ==========================================================
-C:000000H   C:000000H   C:00FFFFH   000034H   CODE
+C:000000H   C:000000H   C:00FFFFH   000024H   CODE
 I:000000H   I:000000H   I:0000FFH   000001H   IDATA
 I:000000H   I:000000H   I:00007FH   000008H   DATA
 
@@ -37,10 +37,9 @@ START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
 
 * * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
 000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
-000003H   000017H   000015H   BYTE   UNIT     CODE           ?PR?ADC?MAIN
+000003H   00000EH   00000CH   BYTE   INBLOCK  CODE           ?PR?MAIN?MAIN
+00000FH   000017H   000009H   BYTE   INBLOCK  CODE           ?PR?DELAY1MS?MAIN
 000018H   000023H   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
-000024H   00002CH   000009H   BYTE   UNIT     CODE           ?PR?DELAY5MS?MAIN
-00002DH   000033H   000007H   BYTE   UNIT     CODE           ?PR?MAIN?MAIN
 
 
 
@@ -54,12 +53,9 @@ FUNCTION/MODULE              BIT_GROUP   DATA_GROUP
   +--> MAIN/MAIN
 
 MAIN/MAIN                   ----- -----  ----- -----
-  +--> ADC/MAIN
+  +--> DELAY1MS/MAIN
 
-ADC/MAIN                    ----- -----  ----- -----
-  +--> DELAY5MS/MAIN
-
-DELAY5MS/MAIN               ----- -----  ----- -----
+DELAY1MS/MAIN               ----- -----  ----- -----
 
 
 
@@ -67,20 +63,19 @@ PUBLIC SYMBOLS OF MODULE:  .\keilOut\code_1 (MAIN)
 
 
       VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
-LX51 LINKER/LOCATER V4.66.1.0                                                         05/01/2020  21:43:29  PAGE 2
-
-
       =================================================
       00000000H   NUMBER   ---       ?C?CODESEG
       00000000H   NUMBER   ---       ?C?XDATASEG
-      0100002DH   CODE     ---       ?C_START
+      01000003H   CODE     ---       ?C_START
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/09/2020  15:46:26  PAGE 2
+
+
       01000000H   CODE     ---       ?C_STARTUP
 *SFR* 000000D0H.6 DATA     BIT       AC
 *SFR* 000000E0H   DATA     BYTE      ACC
-      01000003H   CODE     ---       adc
 *SFR* 000000F0H   DATA     BYTE      B
 *SFR* 000000D0H.7 DATA     BIT       CY
-      01000024H   CODE     ---       delay5ms
+      0100000FH   CODE     ---       delay1ms
 *SFR* 00000083H   DATA     BYTE      DPH
 *SFR* 00000082H   DATA     BYTE      DPL
 *SFR* 000000A8H.7 DATA     BIT       EA
@@ -98,7 +93,7 @@ PUBLIC SYMBOLS OF MODULE:  .\keilOut\code_1 (MAIN)
 *SFR* 000000B8H   DATA     BYTE      IP
 *SFR* 00000088H   DATA     BIT       IT0
 *SFR* 00000088H.2 DATA     BIT       IT1
-      0100002DH   CODE     ---       main
+      01000003H   CODE     ---       main
 *SFR* 000000D0H.2 DATA     BIT       OV
 *SFR* 000000D0H   DATA     BIT       P
 *SFR* 00000080H   DATA     BYTE      P0
@@ -135,14 +130,14 @@ PUBLIC SYMBOLS OF MODULE:  .\keilOut\code_1 (MAIN)
 *SFR* 000000B0H.3 DATA     BIT       P33
 *SFR* 000000B0H.4 DATA     BIT       P34
 *SFR* 000000B0H.5 DATA     BIT       P35
-LX51 LINKER/LOCATER V4.66.1.0                                                         05/01/2020  21:43:29  PAGE 3
-
-
 *SFR* 000000B0H.6 DATA     BIT       P36
 *SFR* 000000B0H.7 DATA     BIT       P37
 *SFR* 00000087H   DATA     BYTE      PCON
 *SFR* 000000B8H.4 DATA     BIT       PS
 *SFR* 000000D0H   DATA     BYTE      PSW
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/09/2020  15:46:26  PAGE 3
+
+
 *SFR* 000000B8H.1 DATA     BIT       PT0
 *SFR* 000000B8H.3 DATA     BIT       PT1
 *SFR* 000000B8H   DATA     BIT       PX0
@@ -184,9 +179,8 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code_1 (MAIN)
       VALUE       REP       CLASS    TYPE      SYMBOL NAME
       ====================================================
       ---         MODULE    ---      ---       MAIN
-      0100002DH   PUBLIC    CODE     ---       main
-      01000003H   PUBLIC    CODE     ---       adc
-      01000024H   PUBLIC    CODE     ---       delay5ms
+      01000003H   PUBLIC    CODE     ---       main
+      0100000FH   PUBLIC    CODE     ---       delay1ms
       00000080H   SFRSYM    DATA     BYTE      P0
       00000090H   SFRSYM    DATA     BYTE      P1
       000000A0H   SFRSYM    DATA     BYTE      P2
@@ -203,15 +197,15 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code_1 (MAIN)
       000000B0H.2 SFRSYM    DATA     BIT       INT0
       000000D0H.7 SFRSYM    DATA     BIT       CY
       00000098H.1 SFRSYM    DATA     BIT       TI
-LX51 LINKER/LOCATER V4.66.1.0                                                         05/01/2020  21:43:29  PAGE 4
-
-
       000000B0H.3 SFRSYM    DATA     BIT       INT1
       000000B8H.4 SFRSYM    DATA     BIT       PS
       00000081H   SFRSYM    DATA     BYTE      SP
       000000D0H.2 SFRSYM    DATA     BIT       OV
       000000B0H.6 SFRSYM    DATA     BIT       WR
       00000080H   SFRSYM    DATA     BIT       P00
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/09/2020  15:46:26  PAGE 4
+
+
       00000090H   SFRSYM    DATA     BIT       P10
       00000080H.1 SFRSYM    DATA     BIT       P01
       00000099H   SFRSYM    DATA     BYTE      SBUF
@@ -271,15 +265,15 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code_1 (MAIN)
       0000008BH   SFRSYM    DATA     BYTE      TL1
       00000098H.5 SFRSYM    DATA     BIT       SM2
       000000B8H.1 SFRSYM    DATA     BIT       PT0
-LX51 LINKER/LOCATER V4.66.1.0                                                         05/01/2020  21:43:29  PAGE 5
-
-
       000000B8H.3 SFRSYM    DATA     BIT       PT1
       000000D0H.3 SFRSYM    DATA     BIT       RS0
       00000088H.4 SFRSYM    DATA     BIT       TR0
       000000D0H.4 SFRSYM    DATA     BIT       RS1
       00000088H.6 SFRSYM    DATA     BIT       TR1
       000000B8H   SFRSYM    DATA     BIT       PX0
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/09/2020  15:46:26  PAGE 5
+
+
       000000B8H.2 SFRSYM    DATA     BIT       PX1
       00000083H   SFRSYM    DATA     BYTE      DPH
       00000082H   SFRSYM    DATA     BYTE      DPL
@@ -289,51 +283,35 @@ SYMBOL TABLE OF MODULE:  .\keilOut\code_1 (MAIN)
       000000D0H.5 SFRSYM    DATA     BIT       F0
       000000D0H   SFRSYM    DATA     BYTE      PSW
 
-      01000024H   BLOCK     CODE     ---       LVL=0
-      01000024H   BLOCK     CODE     NEAR LAB  LVL=1
+      0100000FH   BLOCK     CODE     ---       LVL=0
+      0100000FH   BLOCK     CODE     NEAR LAB  LVL=1
       00000006H   SYMBOL    DATA     BYTE      a
       00000007H   SYMBOL    DATA     BYTE      b
       ---         BLOCKEND  ---      ---       LVL=1
-      01000024H   LINE      CODE     ---       #7
-      01000024H   LINE      CODE     ---       #8
-      01000024H   LINE      CODE     ---       #10
-      01000026H   LINE      CODE     ---       #11
-      0100002CH   LINE      CODE     ---       #12
+      0100000FH   LINE      CODE     ---       #5
+      0100000FH   LINE      CODE     ---       #6
+      0100000FH   LINE      CODE     ---       #8
+      01000011H   LINE      CODE     ---       #9
+      01000017H   LINE      CODE     ---       #10
       ---         BLOCKEND  ---      ---       LVL=0
 
       01000003H   BLOCK     CODE     ---       LVL=0
       01000003H   BLOCK     CODE     NEAR LAB  LVL=1
-      00000005H   SYMBOL    DATA     BYTE      val
+      00000005H   SYMBOL    DATA     BYTE      volte
       ---         BLOCKEND  ---      ---       LVL=1
+      01000003H   LINE      CODE     ---       #13
+      01000003H   LINE      CODE     ---       #14
       01000003H   LINE      CODE     ---       #15
-      01000003H   LINE      CODE     ---       #16
-      01000003H   LINE      CODE     ---       #17
+      01000005H   LINE      CODE     ---       #16
+      01000005H   LINE      CODE     ---       #17
       01000005H   LINE      CODE     ---       #18
-      01000007H   LINE      CODE     ---       #19
-      01000009H   LINE      CODE     ---       #20
-      0100000CH   LINE      CODE     ---       #21
-      0100000EH   LINE      CODE     ---       #22
-      01000011H   LINE      CODE     ---       #23
-      01000013H   LINE      CODE     ---       #24
-      01000015H   LINE      CODE     ---       #25
-      01000017H   LINE      CODE     ---       #26
-      ---         BLOCKEND  ---      ---       LVL=0
-
-      0100002DH   BLOCK     CODE     ---       LVL=0
-      0100002DH   BLOCK     CODE     NEAR LAB  LVL=1
-      00000007H   SYMBOL    DATA     BYTE      v
-      ---         BLOCKEND  ---      ---       LVL=1
-      0100002DH   LINE      CODE     ---       #29
-      0100002DH   LINE      CODE     ---       #30
-      0100002DH   LINE      CODE     ---       #31
-      0100002FH   LINE      CODE     ---       #32
-      0100002FH   LINE      CODE     ---       #33
-      0100002FH   LINE      CODE     ---       #34
-      01000032H   LINE      CODE     ---       #35
+      0100000AH   LINE      CODE     ---       #19
+      0100000BH   LINE      CODE     ---       #20
+      0100000DH   LINE      CODE     ---       #21
       ---         BLOCKEND  ---      ---       LVL=0
 
       ---         MODULE    ---      ---       ?C_STARTUP
       01000000H   PUBLIC    CODE     ---       ?C_STARTUP
 
-Program Size: data=9.0 xdata=0 const=0 code=52
+Program Size: data=9.0 xdata=0 const=0 code=36
 LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

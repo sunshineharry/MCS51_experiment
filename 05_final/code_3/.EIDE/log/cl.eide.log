@@ -1,43 +1,10 @@
 
-[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/5/1|21:48:31|GMT+0800
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/5/9|09:14:45|GMT+0800
 [Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
 
 
 
-[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/5/8|15:08:02|GMT+0800
-[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
-
-
-
-[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/5/8|15:30:55|GMT+0800
-[Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
-[Error] : Error: EEXIST: file already exists, mkdir 'c:\Users\Harry\Desktop\shiyan'
-	at mkdirSync (fs.js:764:3)
-	at fs.mkdirSync (electron/js2c/asar.js:687:16)
-	at Object.fs.mkdirSync (electron/js2c/asar.js:687:16)
-	at s.CreateDir (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:2758)
-	at M._Create (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:82412)
-	at M.Create (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:69926)
-	at D.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:148883)
-	at Generator.next (<anonymous>)
-	at c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:134667
-	at new Promise (<anonymous>)
-	at n (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:134412)
-	at D.CreateProject (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:148721)
-	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:152489)
-	at EventEmitter.emit (events.js:203:13)
-	at t.ProjectExplorer.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:152640)
-	at EventEmitter.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:117815)
-	at EventEmitter.emit (events.js:203:13)
-	at t.OperationExplorer.emit (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:120367)
-	at t.OperationExplorer.<anonymous> (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:125384)
-	at Generator.next (<anonymous>)
-	at s (c:\Users\Harry\.vscode\extensions\cl.eide-1.12.2\dist\extension.js:1:118530)
-	at processTicksAndRejections (internal/process/task_queues.js:85:5)
-
-
-
-[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/5/8|15:44:01|GMT+0800
+[12345678-1234-5678-90AB-CDDEEFAABBCC] : log at : 2020/5/9|09:44:40|GMT+0800
 [Hidden] : Not found D:\ARM-GCC\8 2019-q3-update\bin\arm-none-eabi-gcc.exe !
 
 

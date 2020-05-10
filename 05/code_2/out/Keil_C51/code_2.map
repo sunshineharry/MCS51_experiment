@@ -1,0 +1,113 @@
+LX51 LINKER/LOCATER V4.66.1.0                                                           05/01/2020  16:46:10  PAGE 1
+
+
+LX51 LINKER/LOCATER V4.66.1.0, INVOKED BY:
+C:\PROGRAM FILES\KEIL\C51\BIN\LX51.EXE c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³Ì
+>> ÊµÑé\ÊµÑéÎå-ADDA\code_2\out\Keil_C51\main.o TO c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­À
+>> í\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\out\Keil_C51\code_2 PRINT (c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶
+>> þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\out\Keil_C51\code_2.map) REMOVEUNUSED
+
+
+CPU MODE:     8051 MODE
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA\code_2\out\Keil_C51\
+>> main.o (MAIN)
+         COMMENT TYPE 0: C51 V9.52.0.0
+  C:\PROGRAM FILES\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+         COMMENT TYPE 1: A51 / ASM51 Assembler
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\
+>> ÊµÑéÎå-ADDA\code_2\out\Keil_C51\code_2 (MAIN)
+
+BASE        START       END         USED      MEMORY CLASS
+==========================================================
+C:000000H   C:000000H   C:00FFFFH   000024H   CODE
+I:000000H   I:000000H   I:0000FFH   000001H   IDATA
+I:000000H   I:000000H   I:00007FH   000008H   DATA
+
+
+MEMORY MAP OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-ADDA
+>> \code_2\out\Keil_C51\code_2 (MAIN)
+
+
+START     STOP      LENGTH    ALIGN  RELOC    MEMORY CLASS   SEGMENT NAME
+=========================================================================
+
+* * * * * * * * * * *   D A T A   M E M O R Y   * * * * * * * * * * * * *
+000000H   000007H   000008H   ---    AT..     DATA           "REG BANK 0"
+000008H   000008H   000001H   BYTE   UNIT     IDATA          ?STACK
+
+* * * * * * * * * * *   C O D E   M E M O R Y   * * * * * * * * * * * * *
+000000H   000002H   000003H   ---    OFFS..   CODE           ?CO??C_STARTUP?0
+000003H   00000EH   00000CH   BYTE   INBLOCK  CODE           ?PR?MAIN?MAIN
+00000FH   000017H   000009H   BYTE   INBLOCK  CODE           ?PR?DELAY1MS?MAIN
+000018H   000023H   00000CH   BYTE   UNIT     CODE           ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-AD
+>> DA\code_2\out\Keil_C51\code_2 (MAIN)
+
+
+FUNCTION/MODULE              BIT_GROUP   DATA_GROUP 
+--> CALLED FUNCTION/MODULE  START  STOP  START  STOP
+====================================================
+?C_C51STARTUP               ----- -----  ----- -----
+  +--> MAIN/MAIN
+
+MAIN/MAIN                   ----- -----  ----- -----
+  +--> DELAY1MS/MAIN
+
+DELAY1MS/MAIN               ----- -----  ----- -----
+
+
+
+PUBLIC SYMBOLS OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-
+LX51 LINKER/LOCATER V4.66.1.0                                                         05/01/2020  16:46:10  PAGE 2
+
+
+>> ADDA\code_2\out\Keil_C51\code_2 (MAIN)
+
+
+      VALUE       CLASS    TYPE      PUBLIC SYMBOL NAME
+      =================================================
+      00000000H   NUMBER   ---       ?C?CODESEG
+      00000000H   NUMBER   ---       ?C?XDATASEG
+      01000003H   CODE     ---       ?C_START
+      01000000H   CODE     ---       ?C_STARTUP
+      0100000FH   CODE     ---       delay1ms
+      01000003H   CODE     ---       main
+
+
+
+SYMBOL TABLE OF MODULE:  c:\Users\Harry\Documents\OneDrive - ODMAIL\Ñ§Ï°×ÊÁÏ\´ó¶þÏÂÑ§ÆÚ\Î¢»úÔ­Àí\ÊµÑé\¿Î³ÌÊµÑé\ÊµÑéÎå-AD
+>> DA\code_2\out\Keil_C51\code_2 (MAIN)
+
+      VALUE       REP       CLASS    TYPE      SYMBOL NAME
+      ====================================================
+      ---         MODULE    ---      ---       MAIN
+      01000003H   PUBLIC    CODE     ---       main
+      0100000FH   PUBLIC    CODE     ---       delay1ms
+
+      0100000FH   BLOCK     CODE     ---       LVL=0
+      0100000FH   BLOCK     CODE     NEAR LAB  LVL=1
+      00000006H   SYMBOL    DATA     VOID      a
+      00000007H   SYMBOL    DATA     VOID      b
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      01000003H   BLOCK     CODE     ---       LVL=0
+      01000003H   BLOCK     CODE     NEAR LAB  LVL=1
+      00000005H   SYMBOL    DATA     VOID      volte
+      ---         BLOCKEND  ---      ---       LVL=1
+      ---         BLOCKEND  ---      ---       LVL=0
+
+      ---         MODULE    ---      ---       ?C_STARTUP
+      01000000H   PUBLIC    CODE     ---       ?C_STARTUP
+
+Program Size: data=9.0 xdata=0 const=0 code=36
+LX51 RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

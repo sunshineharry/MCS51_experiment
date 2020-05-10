@@ -1,4 +1,4 @@
-C51 COMPILER V9.52.0.0   MAIN                                                              05/01/2020 22:05:48 PAGE 1   
+C51 COMPILER V9.52.0.0   MAIN                                                              05/09/2020 09:45:22 PAGE 1   
 
 
 C51 COMPILER V9.52.0.0, COMPILATION OF MODULE MAIN
@@ -8,37 +8,47 @@ COMPILER INVOKED BY: C:\Program Files\Keil\C51\BIN\C51.EXE src\main.c OMF2 OPTIM
 
 line level    source
 
-   1          #include "reg51.h"
-   2          #include "DAC0832.H"
-   3          #include "ADC0808.H"
-   4          #define uchar unsigned char
-   5          
+   1          #include "8051.h"
+   2          #include "DAC0832_func.h"
+   3          #include "LED_func.h"
+   4          #include "ADC_func.h"
+   5          #include "interrupt_func.h"
    6          
-   7          void delay(uchar time)
-   8          {
-   9   1          unsigned char a;
-  10   1          for(a=time;a>0;a--);
-  11   1      }
-  12          
-  13          
-  14          void main()
-  15          {
-  16   1          uchar volte = 0x00;
-  17   1          while (1)
-  18   1          {
-  19   2              DAC0832 = volte;
-  20   2              volte++;
-  21   2              delay(ADC());
-  22   2          }
-  23   1      }
+   7          
+   8          void delayms(uchar time)
+   9          {
+  10   1          unsigned char a,b;
+  11   1          for(b=1;b>0;b--)
+  12   1              for(a=time;a>0;a--);
+  13   1      }
+  14          
+  15          
+  16          void main()
+  17          {
+  18   1          uchar volte = 0x00;
+  19   1          uchar time = 0;
+  20   1          EX1_init();
+  21   1          while (1)
+  22   1          {
+  23   2              ADC_choose_INO(); 
+  24   2              //while (IE1 != 1);
+  25   2              // 利用操作DAC延时
+  26   2              DAC0832 = volte;
+  27   2              volte++;
+  28   2              // 延时完成
+  29   2              time = ADC_INO; 
+  30   2              delayms(time);
+  31   2          }
+  32   1          
+  33   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     29    ----
+   CODE SIZE        =     47    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
-   DATA SIZE        =   ----       1
+   DATA SIZE        =   ----       2
    IDATA SIZE       =   ----    ----
    BIT SIZE         =   ----    ----
    EDATA SIZE       =   ----    ----
