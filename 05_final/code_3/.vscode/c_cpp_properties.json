@@ -3,8 +3,10 @@
         {
             "name": "win32",
             "includePath": [
-                "c:\\Users\\Harry\\Desktop\\shiyan\\testADC\\code_3\\dependence",
-                "c:\\Users\\Harry\\Desktop\\shiyan\\testADC\\code_3\\src"
+                ".\\dependence",
+                ".\\src",
+                "C:\\Program Files\\Keil\\C51\\INC",
+                ".\\dependence\\build-in\\toolchain"
             ],
             "defines": [
                 "__C51__",

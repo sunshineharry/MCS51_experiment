@@ -23,7 +23,7 @@ void main()
     uchar sum = add_num_1 + add_num_2;
     uchar tmp=0;
 
-    C8155_init(0x0f);
+    C8155_set_state(0x0f);
 
     while(1)
     {

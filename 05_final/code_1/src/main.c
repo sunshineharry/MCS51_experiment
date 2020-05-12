@@ -2,7 +2,7 @@
 #include "DAC0832_func.h"
 
 
-void delay1ms(void)   //Îó²î 0us
+void delay1ms(void)
 {
     unsigned char a,b;
     for(b=142;b>0;b--)

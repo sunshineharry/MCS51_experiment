@@ -9,9 +9,10 @@
 void main()
 {
     static uchar num = 0;
+    EX1_init();
     while(1)
     {
-        EX1_init();
+        
         ADC_choose_INO();   // 选择ADC的INO 作为模拟量输入
                             // 使用Y7控制，地址 E000H
         while (IE1 != 1);   // 当未产生中断，即未转换完成是程序等待

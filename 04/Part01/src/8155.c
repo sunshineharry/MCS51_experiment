@@ -6,7 +6,7 @@
  * @param  command_2_8155: 设置8155工作状态的参数
  * @retval None
  */
-void C8155_init(uchar command_2_8155)
+void C8155_set_state(uchar command_2_8155)
 {
     C8155_CMD = command_2_8155;
 }
